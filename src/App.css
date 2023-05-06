@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+* {
+    font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+    margin: 0 20%;
+    float: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.start {
+    display: flex;
+    justify-content: center;
+    margin: 10% 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.start > img {
+    height: 250px;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    background-color: #c4dbff;
+    width: 40%;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #757f8d;
+}
+
+.search {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.weather_body {
+    padding: 30px 20px;
+    background-color: #cedffa;
+    border-radius: 10px;
+}
+
+.weather > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.weather > div > img {
+    height: 100px;
+    max-width: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #a9c9fc;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.values {
+    font-weight: bold;
+    font-size: larger;
+    padding-bottom: 15px;
+}
+
+.info > div {
+    padding: 10px;
+    margin: 10px;
+}
+
+.location {
+    font-weight: bolder;
+    font-size: larger;
 }
